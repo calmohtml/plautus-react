@@ -1,0 +1,10 @@
+{
+  //Llamamos los presets que instalamos
+  "presets": [
+    //@babel/preset-env sirve para usar JavaScript moderno
+    "@babel/preset-env",
+    //Y @babel/preset-react sirve para usarlo junto con React.
+    "@babel/preset-react"
+  ],
+  "plugins": ["@babel/plugin-transform-runtime"]
+}
