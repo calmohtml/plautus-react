@@ -1,0 +1,22 @@
+@import "../Vars.scss";
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 0;
+
+  .nav__item--container {
+    display: flex;
+
+    .nav__item {
+      margin: 0 2vh;
+      list-style: none;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav__container {
+    border: 1px solid goldenrod;
+  }
+}
