@@ -1,0 +1,57 @@
+@import "../Vars.scss";
+
+.footer__wrapper {
+  line-height: 7vh;
+  background-color: $grey;
+  color: $paper;
+  border: {
+    left: 3px solid $paper;
+    top: 3px solid $paper;
+    right: 3px solid $paper;
+    radius: 20px;
+    bottom-left-radius: 0px;
+    bottom-right-radius: 0px;
+  }
+  height: 32vh;
+
+  .footer__title {
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .footer__items {
+    display: flex;
+    justify-content: space-evenly;
+
+    .footer__item--icon {
+      font-size: 5vh;
+    }
+
+    .footer__links {
+      display: flex;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer__wrapper {
+    height: 45vh;
+
+    .footer__title {
+      font-size: 2.8vh;
+    }
+    .footer__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+
+      .footer__links {
+        justify-content: center;
+      }
+    }
+  }
+}

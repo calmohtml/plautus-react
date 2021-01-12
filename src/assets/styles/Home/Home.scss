@@ -1,1 +1,40 @@
 @import "../Vars.scss";
+
+.home__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80vh;
+  margin: 6vh 0;
+
+  .home__item {
+    font-size: 4vh;
+
+    img {
+      width: 50vh;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .home__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 15vh;
+
+    .home__item {
+      padding: 1vh;
+      font-size: 3.4vh;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+}

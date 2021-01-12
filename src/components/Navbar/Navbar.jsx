@@ -13,10 +13,10 @@ const Navbar = () => {
     >
       <nav className="nav__container">
         <NavHome href="/" text="PlautUs." />
-        <ul className="nav__item--container">
+        {/* <ul className="nav__item--container">
           <NavItem href="/aboutus" text="About us." />
           <NavItem href="/ouroffer" text="What we offer." />
-        </ul>
+        </ul> */}
         <NavHome href="/signin" text="Sign in." />
       </nav>
     </motion.div>

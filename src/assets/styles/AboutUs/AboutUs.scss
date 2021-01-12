@@ -1,0 +1,58 @@
+@import "../Vars.scss";
+
+.aboutUs__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.2vh;
+  height: 80vh;
+  margin: 6vh 0;
+
+  .aboutUs__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .aboutUs__item {
+      margin: 1vh 0;
+
+      li {
+        margin: 9vh 0;
+        font-size: 2.8vh;
+        margin-left: 3vh;
+      }
+
+      img {
+        width: 75vh;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .aboutUs__wrapper {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    margin-bottom: 10vh;
+
+    .aboutUs__items {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .aboutUs__item {
+        li {
+          list-style: none;
+          font-size: 2.4vh;
+          margin: 4vh 0;
+        }
+
+        img {
+          width: 40%;
+        }
+      }
+    }
+  }
+}

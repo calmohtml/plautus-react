@@ -1,0 +1,11 @@
+@import "../Vars.scss";
+
+.btn {
+  border: 3px solid $lavander;
+  background-color: $paper;
+  border-radius: 20px;
+  padding: 1vh;
+  font-family: $texts;
+  outline: none;
+  margin: 1vh 0;
+}

@@ -1,0 +1,56 @@
+@import "../Vars.scss";
+
+.services__wrapper {
+  text-align: center;
+  border: 3px solid $paper;
+  background-color: $grey;
+  border-radius: 20px;
+  color: $paper;
+  display: grid;
+  height: 80vh;
+  margin: 6vh 0;
+  font-size: 3.4vh;
+
+  .services__title {
+    text-align: center;
+    padding: 1vh;
+  }
+
+  .services__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .services__item--single {
+      margin: 3vh 0px;
+      padding: 3vh;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .services__wrapper {
+    font-size: 2.9vh;
+
+    .services__item {
+      .services__item--single {
+        padding: 2vh;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .services__wrapper {
+    height: 0%;
+    font-size: 2.6vh;
+
+    .services__item {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .services__item--single {
+        padding: 1vh;
+      }
+    }
+  }
+}
