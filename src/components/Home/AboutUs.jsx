@@ -32,8 +32,8 @@ const AboutUs = (props) => {
           </ul>
         </div>
       </div>
-      <Link to="">
-        <Button text="More info" />
+      <Link to="/ourmission">
+        <Button text="More info." />
       </Link>
     </section>
   );

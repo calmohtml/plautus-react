@@ -1,0 +1,122 @@
+@import "../Vars.scss";
+
+.memberships__wrapper {
+  height: 80vh;
+  margin: 6vh 0;
+  text-align: center;
+  line-height: 50px;
+
+  .memberships__title {
+    text-align: center;
+  }
+
+  .singleMembership__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17.5vh;
+
+    #bg-1 {
+      background: linear-gradient(135deg, $dusty, $dusty);
+      border: 3px solid $paper;
+    }
+
+    #bg-2 {
+      background: linear-gradient(135deg, $dusty, $lavander);
+      border: 3px solid $paper;
+    }
+
+    #bg-3 {
+      background: linear-gradient(135deg, $lavander, $grey);
+      border: 3px solid $paper;
+    }
+
+    #bg-4 {
+      background: linear-gradient(135deg, $grey, $grey);
+      border: 3px solid $paper;
+    }
+
+    .singleMembership__container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .singleMembership__item {
+      padding: 10px 15px;
+      position: relative;
+      width: 35vh;
+      z-index: 1;
+      margin: 15px 0;
+    }
+
+    .singleMembership__item ~ .singleMembership__item {
+      z-index: -1;
+    }
+
+    .singleMembership__card:hover {
+      box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+      transform: scale(1.15);
+      z-index: 1;
+    }
+
+    .singleMembership__card::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 75%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: skewX(-15deg) translateX(-100px);
+      z-index: -1;
+    }
+
+    .singleMembership__card {
+      background: transparent;
+      color: $paper;
+      border-radius: 20px;
+      text-align: center;
+      height: 100%;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      position: relative;
+      padding: 30px;
+      overflow: hidden;
+      transform: scale(1);
+      transition: box-shadow, transform 300ms ease-in-out 0s;
+    }
+
+    .singleMembership__icon {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .memberships__wrapper {
+    .singleMembership__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .singleMembership__container {
+        margin: 0 auto;
+
+        .singleMembership__item {
+          width: 36vh;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .memberships__wrapper {
+    .singleMembership__wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .singleMembership__container {
+        margin: 0 auto;
+      }
+    }
+  }
+}

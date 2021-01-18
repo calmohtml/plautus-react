@@ -17,27 +17,27 @@ const OurServices = () => {
       <div className="services__item">
         <Service
           img={<FaCalculator />}
-          title="Math"
+          title="Math."
           subtitle="Calculus, Algebra and Statistics."
         />
         <Service
           img={<FaBalanceScale />}
-          title="Law"
+          title="Law."
           subtitle="Accountability, Regulation and Taxation."
         />
         <Service
           img={<FaHandHoldingUsd />}
-          title="Finances"
+          title="Finances."
           subtitle="Analysis, Administration and Markets."
         />
         <Service
           img={<FaSuitcase />}
-          title="Portfolio"
+          title="Portfolio."
           subtitle="Advising, Investor Profile and Savings."
         />
       </div>
-      <Link to="/">
-        <Button text="More info" />
+      <Link to="">
+        <Button text="More info." />
       </Link>
     </section>
   );

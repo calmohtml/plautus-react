@@ -29,6 +29,11 @@ body {
     color: $paper;
   }
 
+  p,
+  a {
+    font-family: $texts;
+  }
+
   a {
     color: $paper;
   }

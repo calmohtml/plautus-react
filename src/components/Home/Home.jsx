@@ -19,7 +19,7 @@ const Main = () => {
       />
       <OurServices />
       <AboutUs
-        title="About us"
+        title="About us."
         subtitle="We are a organization made of mathematics, economists and programmers, who wants to make more accesible the financial world to everybody."
         question1="To who is this heading to?"
         answer1="Students, professionals and anybody interested to learn."

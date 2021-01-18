@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import investing from "../../assets/static/investing.svg";
 import "../../assets/styles/App.scss";
@@ -10,7 +11,9 @@ const FirstImpression = (props) => {
       <div className="home__item">
         <h2>{props.title}</h2>
         <h3>{props.subtitle}</h3>
-        <Button text="I want to be a member" />
+        <Link to="/memberships">
+          <Button text="I want to be a member." />
+        </Link>
       </div>
       <div className="home__item">
         <figure>

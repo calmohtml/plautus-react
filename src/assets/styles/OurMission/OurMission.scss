@@ -1,0 +1,78 @@
+@import "../Vars.scss";
+
+.ourMission__wrapper {
+  height: 80vh;
+  margin: 6vh 0;
+  text-align: center;
+  line-height: 50px;
+
+  .ourMission__title {
+    text-align: center;
+  }
+
+  .ourMission__items {
+    display: flex;
+
+    .ourMission__text {
+      text-align: left;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        margin: 2vh 0;
+      }
+    }
+
+    .ourMission__img {
+      figure {
+        text-align: right;
+        img {
+          width: 50vh;
+        }
+      }
+    }
+  }
+
+  .ourMission__values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .ourMission__value {
+      margin: 6vh 0;
+
+      .ourMission__icon {
+        font-size: 5vh;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .ourMission__wrapper {
+    line-height: 50px;
+
+    .ourMission__items {
+      flex-direction: column;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+
+      .ourMission__text {
+        text-align: center;
+      }
+
+      .ourMission__img {
+        figure {
+          img {
+            width: 30vh;
+          }
+        }
+      }
+    }
+    .ourMission__values {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
