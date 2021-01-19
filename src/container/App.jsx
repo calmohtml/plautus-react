@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Home from "../components/Home/Home";
 import Memberships from "../components/Memberships/Memberships";
 import OurMission from "../components/OurMission/OurMission";
+import Details from "../components/Details/Details";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import "../assets/styles/App.scss";
@@ -16,6 +17,7 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route path="/memberships" component={Memberships} />
           <Route path="/ourmission" component={OurMission} />
+          <Route path="/details" component={Details} />
         </Switch>
       </AnimatePresence>
     </Router>

@@ -36,7 +36,7 @@ const OurServices = () => {
           subtitle="Advising, Investor Profile and Savings."
         />
       </div>
-      <Link to="">
+      <Link to="/details">
         <Button text="More info." />
       </Link>
     </section>

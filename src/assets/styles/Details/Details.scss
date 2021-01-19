@@ -1,0 +1,63 @@
+@import "../Vars.scss";
+
+.details__wrapper {
+  .details__title {
+    text-align: center;
+  }
+
+  .details__texts {
+    justify-content: space-around;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    height: 60vh;
+    margin: 7vh 0;
+
+    .details__items {
+      .details__item {
+        width: 100vh;
+
+        .details__summary {
+          margin: 2vh 0;
+          display: flex;
+          align-items: center;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .details__img {
+      figure {
+        img {
+          width: 70vh;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .details__wrapper {
+    border: 1px solid red;
+
+    .details__texts {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+
+      .details__items {
+        .details__item {
+          width: auto;
+        }
+      }
+      .details__img {
+        figure {
+          img {
+            width: 33vh;
+          }
+        }
+      }
+    }
+  }
+}

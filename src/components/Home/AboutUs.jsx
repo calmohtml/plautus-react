@@ -23,7 +23,7 @@ const AboutUs = (props) => {
             </li>
             <li>
               <h3>{props.question2}</h3>
-              <p>{props.question2}</p>
+              <p>{props.answer2}</p>
             </li>
             <li>
               <h3>{props.question3}</h3>
